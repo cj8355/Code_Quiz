@@ -1,0 +1,89 @@
+body {
+    color: white;
+}
+
+/*Adds a background clolor. Sets the margin bottom, border radius, font size and minimum width.*/
+.choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background: blue;
+    font-size: 3rem;
+    min-width: 80rem;
+}
+
+/*Adds a shadow around the box when the mouse is hovered over the one of the 4 answer choices*/
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 blue;
+    transform: scale(1.02);
+    transform: transform 100ms;
+}
+
+.choice-orefix {
+    padding: 2rem 2.5rem;
+    color: white;
+}
+
+.choice-text {
+    padding: 2rem;
+    width: 100%;
+}
+
+/*Causes the answer to turn green if the answer is correct*/
+.correct {
+    background: linear-gradient(32deg, green 0%, green 100%);
+}
+
+/*Causes the answer to turn red if the answer is incorrect*/
+.incorrect {
+    background: linear-gradient(32deg, red 0%, red 100%);
+}
+
+/*Sets the formatting for the question area, HUD*/
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+/*Sets the size and color of the progress bar*/
+#progressBar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid green;
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: green;
+    width: 0%;
+}
+
+/*Sets the font size, color, text alignment and margin bottom for the countdown timer.*/
+#countdown.timer {
+    font-size: 5.4rem;
+    color: white;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+
+/*Sets the minimum width for smaller screens for the answer choices*/
+@media screen and (max-width:768px) {
+    .choice-container{
+        min-width: 40rem;
+    }
+}

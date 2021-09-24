@@ -1,0 +1,149 @@
+/*Importing font*/
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+:root {
+    background-color: grey;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: "Nova Square", serif;
+}
+
+/*Sets the font size/color and margin bottom*/
+h1 {
+    font-size: 5.4rem;
+    color: white;
+    margin-bottom: 5rem;
+}
+
+/*Sets the font size/color and margin bottom*/
+h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+}
+
+/*Sets the width and height. Centers the items and distributes them evenly. Adds a padding and margin*/
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Centers the item*/
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+/*Centers the item*/
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/*Sets the font size, padding, width and alignment. Sets the bacground color and border radius*/
+.btn {
+    font-size: 2.4rem;
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, purple 0%, purple 100%);
+    border-radius: 4px;
+}
+
+/*Causes the styling of the button to change when hovered over*/
+.bth:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 purple;
+    transition: transform 150ms;
+    transform:scale(1.03);
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+#highscore-btn {
+    background: linear-gradient(90deg, black 0%, black 100%);;
+}
+
+#highscore-btn:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 black;
+}
+
+.fa-crown {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+}
+
+/*End Page CSS*/
+.end-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+
+/*Sets the margin bottom, width, padding, font size and border*/
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0ch0.1rem 1.4rem 0 blue;
+}
+
+input::placeholder {
+    color: white;
+}
+
+#username {
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
+}
+
+#end-text {
+    font-size: 2.4rem;
+    color: white;
+    text-align: center;
+}
+
+#saveScoreBtn {
+    border: none;
+}
+
+/*Adds a margin left, sets the font size and color for the icon*/
+.fa-home {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: black;
+}
