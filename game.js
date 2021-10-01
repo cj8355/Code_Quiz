@@ -112,7 +112,7 @@ getNewQuestion = () => {
   if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS || seconds == 0) {
     localStorage.setItem('mostRecentScore', score)
 
-    return window.location.assign('/Users/charl/Code_Quiz/end.html')
+    return window.location.assign('end.html')
   }
 
   questionCounter++
@@ -180,7 +180,7 @@ function secondPassed() {
   if(seconds > 0) {
     seconds--;
   }else{
-    return window.location.assign('/Users/charl/Code_Quiz/end.html')
+    return window.location.assign('end.html')
   }
   
 }
